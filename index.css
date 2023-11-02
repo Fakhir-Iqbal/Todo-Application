@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&family=Noto+Sans&family=PT+Serif&family=Poppins:wght@300;400&family=Roboto+Mono&display=swap");
+
+/*
+All importing fonts of google.
+
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Roboto Mono', monospace;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-image: url("https://images.unsplash.com/photo-1523634921619-37ce98c1877f?auto=format&fit=crop&q=80&w=1473&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.todo-list {
+  background-color: rgba(0, 0, 0, 0.699);
+  padding: 4vh 4vh;
+  border-radius: 10px;
+}
+#heading {
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+#submit-task,
+#todo-input,
+#Edit-task {
+  outline: none;
+  margin-top: 30px;
+  border: 3px solid #000000be;
+  padding: 6px 10px;
+}
+
+#todo-input {
+  border-right: none;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#submit-task {
+  position: relative;
+  left: -8px;
+  color: white;
+  font-weight: 600;
+  border-radius: 0px 10px 10px 0px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.74);
+}
+#Edit-task {
+  position: relative;
+  left: -8px;
+  font-weight: 600;
+  border-radius: 0px 10px 10px 0px;
+  background-color: rgba(2, 95, 2, 0.884);
+  color: rgb(255, 255, 255);
+  display: none;
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+/* #Edit-task, #submit-task {
+
+} */
+.wrapper {
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  margin: 5px 0px;
+  padding: 6px 12px;
+  background-color: rgba(0, 0, 0, 0.699);
+  transform: scale(1);
+  cursor: pointer;
+}
+.wrapper:hover {
+  transform: scale(1.01);
+  transition: all .2s linear;
+}
+
+#todo-title {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.material-symbols-outlined {
+  cursor: pointer;
+  color: #ffffffb4;
+  transition: all 0.3s linear;
+  transform: scale(1);
+}
+
+.material-symbols-outlined:hover {
+  color: #ff0000;
+  transform: scale(1.1);
+}
